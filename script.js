@@ -1,15 +1,5 @@
-const a = window.prompt("nas");
-console.log(a);
+const a = [1, 2, 3, 4, 5];
 
-
-
-
-if( a < 13) {
-    console.log("hvvhed")
-}
- else if ( a < 20) {
-console.log("zaluuchuud")
-}
-else if ( a < 60) {
-    console.log("nasandhursen")
+for (let i = 0; i < a.length; i++) {
+  console.log(i);
 }
