@@ -7,4 +7,11 @@ const userValue = Number(
 );
 
 console.log(getRandomNumber(), userValue);
-window.alert("user yallaa");
+
+
+if(userValue > getRandomNumber){
+    console.log(window.alert("user yallaa"))
+}else(console.log(window.alert("pc yallaa")))
+if(userValue = getRandomNumber){
+console.log(window.alert(window.alert("draw")))
+}
