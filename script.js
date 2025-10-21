@@ -1,5 +1,3 @@
-
-
 const rockpaper = () => {
   console.log("Haich chuluu daawuu togloh gj bn");
 };
@@ -28,6 +26,7 @@ const shoo1 = Math.floor(Math.random() * 6) + 1;
 const shoo2 = Math.floor(Math.random() * 6) + 1;
 const resultShoo = shoo1 + shoo2
 
+window.alert(resultShoo)
 
 
 
