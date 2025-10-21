@@ -14,4 +14,4 @@ if(userValue > getRandomNumber){
 }else(console.log(window.alert("pc yallaa")))
 if(userValue = getRandomNumber){
 console.log(window.alert(window.alert("draw")))
-}
+} 
