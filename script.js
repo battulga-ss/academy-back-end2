@@ -1,17 +1,47 @@
-const getRandomNumber = () => {
-  return Math.floor(Math.random() * 3) + 1;
+
+
+const rockpaper = () => {
+  console.log("Haich chuluu daawuu togloh gj bn");
 };
 
-const userValue = Number(
-  window.prompt("Ymr durs gargah haich bol 1, chuluu bol2, daawubol 3")
-);
+const games = {
+  rockpaper,
+  word: () => {
+    console.log("Word guess tgloh gej bna ");
+  },
+  dice: () => {
+    console.log("Dice guess tgloh gej bna ");
+  },
+  number: () => {
+    console.log("Number guess tgloh gej bna ");
+  }
+};
 
-console.log(getRandomNumber(), userValue);
+window,alert("togloomoo songonuu");
 
 
-if(userValue > getRandomNumber){
-    console.log(window.alert("user yallaa"))
-}else(console.log(window.alert("pc yallaa")))
-if(userValue = getRandomNumber){
-console.log(window.alert(window.alert("draw")))
-} 
+const game = window.prompt("dice , word , haich chuuu daawuu, number ");
+
+games[game]();
+
+const shoo1 = Math.floor(Math.random() * 6) + 1;
+const shoo2 = Math.floor(Math.random() * 6) + 1;
+const resultShoo = shoo1 + shoo2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(resultShoo >= 8 ){window.alert ("hojloo")}
+  else(window.alert("hojigdloo"));
+
