@@ -1,56 +1,31 @@
 
+class Student {
+  constructor(name, age) {
+    this.name = name ? name : 0;
+    this.age = age ? age : 0;
+  }
 
-const dice = document.getElementById("button1")
-const RPS = document.getElementById("button2")
-const GuessNumber = document.getElementById("button3")
-const GuessWord = document.getElementById("button4")
-const exit = document.getElementById("button5")
-const togloh = document.getElementById("RunBtn")
-const result = document.getElementById("result")
+  ages() {
+    return this.age
+  }
+  names() {
+    return  this.name
+  }
 
-
-
-//dice
-
-
-
-
-
-
- const runBtn = () => {
-
-
-const shoo1 = Math.floor(Math.random() * 6) + 1
-const shoo2 = Math.floor(Math.random() * 6) + 1
-
-const sum = shoo1 + shoo2
-
-if(sum === 7 || sum === 11 ){
-  console.log("win",sum)
-
-
-
-
-
-}else{
-
-   console.log("lose",sum)
-}
-
-
-
- 
-}
-
-
- const rpsfunction = () => {
-
+  indtoduce(){
+return  "hi my name is   " + this.name  + "   years old" +  this.age   
   
+}
 
-  console.log("click rpsfunction ")
+
 
 }
 
-dice.addEventListener("click", runBtn)
 
-RPS.addEventListener("click", rpsfunction)
+const student = new Student("bat", 16)
+
+console.log(student.indtoduce())
+
+
+
+
