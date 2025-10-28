@@ -12,37 +12,45 @@ const result = document.getElementById("result")
 
 //dice
 
+
+
+
+
+
+ const runBtn = () => {
+
+
 const shoo1 = Math.floor(Math.random() * 6) + 1
 const shoo2 = Math.floor(Math.random() * 6) + 1
 
+const sum = shoo1 + shoo2
 
-
-
-const RunBtn = () => {
-const result = shoo1 + shoo2
-  const shoo1Element = document.getElementById("shoo1")
-  const shoo2Element = document.getElementById("shoo2")
-
-  const shoo1 = shoo1Element.value
-  const shoo2 = shoo2Element.value
-listElement.innerHTML = ""
-listElement.innerHTML = `<li><p>${result}</p></li>`;
-
-const li = document.createElement("li");
+if(sum === 7 || sum === 11 ){
+  console.log("win",sum)
 
 
 
 
-if (result === 8 && 11 ){ 
 
-  <li><p>${"ta hojloo"}</p></li>
+}else{
 
-   }else {
-    
-      <li><p>${"ta hojigdoo"}</p></li>
+   console.log("lose",sum)
+}
 
-    }
+
+
  
 }
 
-RunBtn.addEventListener("click",result)
+
+ const rpsfunction = () => {
+
+  
+
+  console.log("click rpsfunction ")
+
+}
+
+dice.addEventListener("click", runBtn)
+
+RPS.addEventListener("click", rpsfunction)
